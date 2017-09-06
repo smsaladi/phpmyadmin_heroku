@@ -1,0 +1,11 @@
+{
+  "require" : {
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  },
+  "scripts" : {
+    "post-install-cmd" : "composer create-project phpmyadmin/phpmyadmin; cp config.inc.php phpmyadmin/"
+  }
+}
